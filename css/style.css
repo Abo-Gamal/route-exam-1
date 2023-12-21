@@ -508,6 +508,12 @@
 .text-box{
     padding-bottom: 1rem;
 }
+/* .square-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
 .customer{
     background-color: var(--main-back-color);
     width: 70%;
