@@ -1,0 +1,672 @@
+:root{
+    --main-back-color: #fff;
+    --sec-color: #00c3da;
+    --gray: #787878;
+    --black: #1f1f1f;
+    --border-color: #dedede;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1050px;
+    }
+}
+
+/* $$$$$$$$$$$$$$$$-     start navbar     -$$$$$$$$$$$$$$$$ */
+
+.navbar{
+    background-color: var(--main-back-color);
+}
+.nav-link{
+    color: var(--black);
+    transition: color 0.5s;
+}
+.nav-link i{
+    margin-top: 0.35rem;
+    margin-left: 0.7rem;
+    font-size: small;
+}
+.nav-link:hover{
+    color: var(--sec-color);
+}
+#navbar .nav-item .active{
+    color: var(--sec-color);
+    font-weight: bold;
+}
+
+/* $$$$$$$$$$$$$$$$-     ebd navbar     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start home     -$$$$$$$$$$$$$$$$ */
+
+#home .home-part1{
+    background-image: url(../images/bg-image-28.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#home .home-part2{
+    background-image: url(../images/bg-image-29.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#home .home-layer{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#home .home-layer h1{
+    color: var(--main-back-color);
+    /* font-size: 4rem; */
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#home .home-layer h5{
+    color: var(--main-back-color);
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+#home .home-buttons{
+    margin-top: 1rem;
+}
+#home .home-buttons .button1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-back-color);
+    border: none;
+    background-color: var(--sec-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    font-size: small;
+    margin-right: 0.5rem;
+    transition: transform 0.5s , background-color 0.5s;
+}
+#home .button1:hover{
+    transform: translateY(-0.2rem);
+    background-color: #07d7ee;
+}
+#home .home-buttons .button2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-back-color);
+    border: 0.08rem solid var(--main-back-color);
+    background-color: transparent;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    font-size: small;
+    margin-left: 0.5rem;
+    transition: transform 0.5s , background-color 0.5s , color 0.5s;
+}
+#home .button2:hover{
+    transform: translateY(-0.2rem);
+    background-color: var(--main-back-color);
+    color: var(--black);
+}
+#home .control-prev{
+    position: absolute;
+    left: 0;
+    top: 46.9%;
+    border: 1px solid var(--main-back-color);
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+#home .control-prev i{
+    font-size: large;
+    color: var(--main-back-color);
+    transition: color 0.5s;
+    z-index: 99999;
+    position: absolute;
+    top: 33%;
+    right: 33%;
+}
+#home .control-prev:hover i{
+    color: var(--black);
+}
+.home-arrow-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 103%;
+    background-color: var(--main-back-color);
+    transition: right 0.5s;
+    z-index: 0;
+}
+#home .control-prev:hover .home-arrow-layer{
+    right: 0;
+}
+#home .control-next:hover .home-arrow-layer{
+    right: 0;
+}
+#home .control-next{
+    position: absolute;
+    left: 0;
+    top: 53%;
+    border: 1px solid var(--main-back-color);
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+}
+#home .control-next i{
+    font-size: large;
+    color: var(--main-back-color);
+    transition: color 0.5s;
+    z-index: 99999;
+    position: absolute;
+    top: 33%;
+    right: 33%;
+}
+#home .control-next:hover i{
+    color: var(--black);
+}
+
+
+
+/* $$$$$$$$$$$$$$$$-     end home     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start about     -$$$$$$$$$$$$$$$$ */
+
+#about{
+    background-color: var(--main-back-color);
+    border-bottom: 0.000001rem solid var(--border-color);
+}
+.about-content{
+    padding-top: 4rem;
+}
+.about-content h6{
+    font-size: 0.85rem;
+}
+.about-content .about-p p{
+    font-size: 24px;
+    color: var(--gray);
+}
+.about-animation::after{
+    content: "";
+    color: var(--sec-color);
+    animation: aboani 8s infinite;
+}
+@keyframes aboani {
+    0%{content: "|";}
+    2.5%{content: "s|";}
+    5%{content: "so|";}
+    7.5%{content: "sof|";}
+    10%{content: "soft|";}
+    12.5%{content: "softw|";}
+    15%{content: "softwa|";}
+    17.5%{content: "softwar|";}
+    20%{content: "software|";}
+    22.5%{content: "softwares|";}
+    25%{content: "software|";}
+    27.5%{content: "softwar|";}
+    30%{content: "softwa|";}
+    32.5%{content: "softw|";}
+    35%{content: "soft|";}
+    37.5%{content: "sof|";}
+    40%{content: "so|";}
+    42.5%{content: "s|";}
+    45%{content: "|";}
+    47.5%{content: "a|";}
+    50%{content: "ap|";}
+    52.5%{content: "app|";}
+    55%{content: "apps|";}
+    57.5%{content: "app|";}
+    60%{content: "ap|";}
+    62.5%{content: "a|";}
+    65%{content: "|";}
+    67.5%{content: "w|";}
+    70%{content: "we|";}
+    72.5%{content: "web|";}
+    75%{content: "webs|";}
+    77.5%{content: "websi|";}
+    80%{content: "websit|";}
+    82.5%{content: "website|";}
+    85%{content: "websites|";}
+    87.5%{content: "website|";}
+    90%{content: "websit|";}
+    92.5%{content: "websi|";}
+    95%{content: "webs|";}
+    96%{content: "web|";}
+    97%{content: "we|";}
+    98%{content: "w|";}
+    99%{content: "|";}
+    100%{content: "";}
+}
+.about-content button{
+    padding: 1rem 2rem;
+    border: 0.08rem solid var(--border-color);
+    background-color: var(--main-back-color);
+    font-size: 0.7rem;
+    color: var(--black);
+    transition: background-color 0.2s , color 0.2s;
+    margin-bottom: 5rem;
+}
+.about-content button:hover{
+    background-color: var(--black);
+    color: var(--main-back-color);
+}
+
+/* $$$$$$$$$$$$$$$$-     end about     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start team     -$$$$$$$$$$$$$$$$ */
+
+#team{
+    background-color: var(--main-back-color);
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+}
+.team-head h2{
+    color: #f3f3f3;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.team-head h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.team-content p{
+    color: var(--gray);
+}
+.member-layer{
+    background-color: var(--sec-color);
+    top: 10%;
+    bottom: 0;
+    opacity: 0;
+    transition: top 0.2s , opacity 0.2s;
+}
+.team-member1:hover .member-layer{
+    top: 0;
+    opacity: 0.9;
+}
+.team-member2:hover .member-layer{
+    top: 0;
+    opacity: 0.9;
+}.team-member3:hover .member-layer{
+    top: 0;
+    opacity: 0.9;
+}.team-member4:hover .member-layer{
+    top: 0;
+    opacity: 0.9;
+}
+.team-layer-icons a{
+    color: var(--main-back-color);
+    padding-right: 0.7rem;
+    font-size: small;
+}
+.team-layer-content{
+    color: var(--main-back-color);
+    font-size: small;
+}
+
+/* $$$$$$$$$$$$$$$$-     end team     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start services     -$$$$$$$$$$$$$$$$ */
+
+#services{
+    background-color: var(--gray);
+}
+.services-head{
+    margin-top: 8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    color: var(--main-back-color);
+}
+.marginbottom{
+    margin-bottom: 4rem;
+}
+.services-text-title h2{
+    color: #8a8989;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.services-text-title h3{
+    color: var(--main-back-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2.3rem;
+    padding-left: 0.75rem;
+}
+.services-text p{
+    /* width: 80%; */
+    color: var(--main-back-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+.services-context{
+    padding-bottom: 8rem;
+}
+
+.services-list{
+    margin-top: 3rem;
+}
+.services-list ul{
+    color: var(--main-back-color);
+    font-weight: lighter;
+    
+}
+.services-list li{
+    margin-bottom: 1rem;
+}
+
+/* $$$$$$$$$$$$$$$$-     end services     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start pricing     -$$$$$$$$$$$$$$$$ */
+
+#pricing{
+    background-color: #f7f7f7;
+    padding-top: 6rem;
+}
+.pricing-head h2{
+    color: #eaeaea;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.pricing-head h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#pricing p{
+    color: var(--gray);
+}
+.pricing-cards{
+    padding-bottom: 5rem;
+}
+.pri-card{
+    background-color: var(--main-back-color);
+    width: 98%;
+    /* height: 60%; */        
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+}
+.pri-card:hover{
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.pri-card h4{
+    padding-top: 2rem;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+.pri-card h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    font-size: 3rem;
+}
+.pri-card h2 i{
+    font-size: medium;
+    position: relative;
+    top: -30;
+}
+.pri-card ul li{
+    color: var(--gray);
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+.pri-card button{
+    background-color: var(--sec-color);
+    color: var(--main-back-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    transition: transform 0.5s , background-color 0.5s;
+}
+.pri-card button:hover{
+    transform: translateY(-0.2rem);
+    background-color: #07d7ee;
+}
+.card3{
+    background-color: var(--main-back-color);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+}
+.card3:hover{
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.card3 h4{
+    margin-top: 2rem;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+.card3-head2{
+    background-color: var(--sec-color);
+    color: var(--main-back-color);
+    border-radius: 1rem;
+    padding: 0.3rem 0.7rem;
+    margin-top: 1.9rem;
+    font-size: xx-small;
+}
+.card3 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--sec-color);
+    font-size: 3rem;
+}
+.card3 h2 i{
+    font-size: medium;
+    position: relative;
+    top: -30;
+}
+.card3 ul li{
+    color: var(--gray);
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+.card3 button{
+    background-color: var(--sec-color);
+    color: var(--main-back-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    font-weight: bolder;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    transition: transform 0.5s , background-color 0.5s;
+}
+.card3 button:hover{
+    transform: translateY(-0.2rem);
+    background-color: #07d7ee;
+
+}
+
+/* $$$$$$$$$$$$$$$$-     end pricing     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start testmonial     -$$$$$$$$$$$$$$$$ */
+
+#testmonial{
+    background-color: #f7f7f7;
+}
+#testmonial h3{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+.text-box{
+    padding-bottom: 1rem;
+}
+.customer{
+    background-color: var(--main-back-color);
+    width: 70%;
+    margin-left: 9.4rem;
+}
+.customer h4{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3rem;
+}
+.cust-p1{
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    padding-top: 0.5rem;
+    font-weight: bolder;
+}
+.cust-p2{
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0.5rem;
+    font-size: medium;
+    font-weight: lighter;
+    
+    text-align: center;
+}
+#testmonial img{
+    width: 7rem;
+    transform: translateY(50%);
+}
+#testmonial .arrow-r-control{
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+}
+#testmonial .arrow-r-control i{
+    color: var(--gray);
+    font-size: xx-large;
+    transition: color 0.5s , transform 0.5s;
+}
+#testmonial .arrow-r-control i:hover{
+    color: var(--sec-color);
+    transform: translateX(0.5rem);
+}
+#testmonial .arrow-l-control{
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+}
+#testmonial .arrow-l-control i{
+    color: var(--gray);
+    font-size: xx-large;
+    transition: color 0.5s , transform 0.5s;
+}
+#testmonial .arrow-l-control i:hover{
+    color: var(--sec-color);
+    transform: translateX(-0.5rem);
+}
+#testmonial .carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    padding-top: 0;
+    margin-top: 0;
+    background-color: var(--gray);
+    transition: background-color 0.5s;
+    margin-bottom: 5rem;
+}
+#testmonial .carousel-indicators [data-bs-target]:hover{
+    background-color: var(--sec-color);
+}
+#testmonial .carousel-indicators .active{
+    background-color: var(--sec-color);
+}
+
+/* $$$$$$$$$$$$$$$$-     end testimonial     -$$$$$$$$$$$$$$$$ */
+
+/* $$$$$$$$$$$$$$$$-     start contact     -$$$$$$$$$$$$$$$$ */
+
+#contact{
+    background-color: var(--main-back-color);
+}
+.contact-form-title h2{
+    color: #f3f3f3;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-form-title h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2.3rem;
+    padding-left: 0.75rem;
+}
+.contact-iframe iframe{
+    width: 100%;
+}
+.contact-form p{
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3.5rem;
+}
+.contact-form form{
+    margin-left: 3.5rem;
+}
+.contact-form form label{
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+.contact-form form input{
+    margin-left: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid var(--border-color);
+    padding: 0.7rem;
+}
+.contact-form form textarea{
+    margin-left: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    border: 0.1rem solid var(--border-color);
+    padding: 2rem;
+}
+.contact-form form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: var(--main-back-color);
+    background-color: var(--sec-color);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem 1.5rem;
+    transition: transform 0.5s , background-color 0.5s;
+}
+.contact-form form button:hover{
+    transform: translateY(-0.2rem);
+    background-color: #07d7ee;
+
+}
+@media (max-width: 575px) {
+    .contact-form form{
+        margin-left: 0;
+    }
+    .contact-form form textarea{
+        width: 95%;
+    }
+    .contact-form form input{
+        width: 95%;
+    }
+    .contact-form form button{
+        margin-bottom: 7rem;
+    }
+}
+
+/* $$$$$$$$$$$$$$$$-     end contact     -$$$$$$$$$$$$$$$$ */
