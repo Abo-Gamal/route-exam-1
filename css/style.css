@@ -516,8 +516,8 @@
 } */
 .customer{
     background-color: var(--main-back-color);
-    width: 70%;
-    margin-left: 9.4rem;
+    /* width: 70%; */
+    /* margin-left: 9.4rem; */
 }
 .customer h4{
     font-family: 'Poppins', sans-serif;
@@ -536,7 +536,6 @@
     padding-top: 0.5rem;
     font-size: medium;
     font-weight: lighter;
-    
     text-align: center;
 }
 #testmonial img{
